@@ -9,7 +9,7 @@ function ready(fn) {
 ready(function(){
   console.log('DOM ready');
 });
-<script>
+
     const data = {
       books:[
      {
@@ -43,7 +43,7 @@ ready(function(){
       bookPrice: '500 ₽'
       // href:
      },{
-      src: '/img/book-social-media-marketing.jpg',
+      src: 'img/book-social-media-marketing.jpg',
       title: 'Маркетинг в социальных сетях',
       bookDescr: '',
       bookPrice: '630 ₽'
@@ -71,7 +71,7 @@ const cardsWrap = document.querySelector('.j-catalog__list');
 
 function createCard(item) {
   const card = document.createElement('div');
-  card.classList.add('catalog__list');
+  card.classList.add('product-card-mini');
 
   card.innerHTML = `<article class="j-product-card-mini">
           <a href="" class="product-card-mini__img-wrap"><img src="${item.src}" alt="" class="product-card-mini__img"></a>
@@ -101,4 +101,4 @@ if (cardsWrap) {
 
 
 
-  </script>
+
