@@ -39,7 +39,7 @@ function serve() {
     './scss/blocks/*.scss',
   ], { delay: 100 }, styles);
   watch('./*.html').on('change', browserSync.reload);
-  watch('./js/*.js').on('change', browserSync.reload);
+  watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.default = series(clean, styles, serve);
