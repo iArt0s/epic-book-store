@@ -13,7 +13,7 @@ let extensions = uniqueArray(defaultExtensions.concat(process.argv.slice(3)));  
 // Если есть имя блока
 if(blockName) {
 
-  let dirPath = `./scss/blocks/${blockName}/`; // полный путь к создаваемой папке блока
+  let dirPath = `./scss/blocks/`; // полный путь к создаваемой папке блока
   mkdirp(dirPath, function(err){ // создаем
 
     // Если какая-то ошибка — покажем
@@ -31,7 +31,7 @@ if(blockName) {
         let filePath = dirPath + blockName + '.' + extention; // полный путь к создаваемому файлу
         let fileContent = `.${blockName} {
           
-        }`; // будущий контент файла
+}`; // будущий контент файла
 
         let fileCreateMsg = ''; // будущее сообщение в консоли при создании файла
 

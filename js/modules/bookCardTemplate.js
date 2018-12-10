@@ -6,7 +6,7 @@ const bookCardTemplate = {
 	setContent: function (item) {
 		return `<article class="j-product-card-mini">
           <a href="" class="product-card-mini__img-wrap">
-          	<img src="img/${item.uri}.png" alt="" class="product-card-mini__img">
+          	<img src="img/books/${item.uri}.png" alt="" class="product-card-mini__img">
           </a>
           <h2 class="product-card-mini__title"><a href="">${item.name}</a></h2>
           <p class="product-card-mini__descr">${item.desc}</p>
