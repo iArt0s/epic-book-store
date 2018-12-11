@@ -1,5 +1,5 @@
 import addToPage from './modules/addToPage.js';
-import data from './modules/booksData.js';
+// import data from './modules/booksData.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
 
