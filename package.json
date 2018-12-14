@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "Start project.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "test": "stylelint \"src/scss/**/*.scss\" --syntax=scss",
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
   },
   "author": "Arthem O",
   "license": "MIT",
@@ -28,7 +34,10 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.1",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
     "path": "^0.12.7",
+    "stylelint": "^9.9.0",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"
   }
