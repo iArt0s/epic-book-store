@@ -40,5 +40,8 @@
     "stylelint": "^9.9.0",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
   }
 }

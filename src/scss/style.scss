@@ -1,3 +1,5 @@
+@import 'node_modules/normalize-scss/sass/_normalize.scss';
+
 @import 'variables';
 
 @import 'fonts';
@@ -21,7 +23,6 @@
 @import 'blocks/newitems.scss';
 
 @import 'blocks/footer.scss';
-
 
 
 @import 'blocks/page';
