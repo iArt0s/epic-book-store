@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Документ</title>
+  <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -41,17 +42,65 @@
 
 
 	<div class="promo">
-		<div class="promo__inner">
+		<!-- Slider main container -->
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="imgBx">
+						<img src="src/img/sl1.png" alt="">
+					</div>
+					<div class="details">
+						<p>Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="imgBx">
+						<img src="src/img/sl2.png" alt="">
+					</div>
+					<div class="details">
+						<p>Книга про правила российского руководителя</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="imgBx">
+						<img src="src/img/sl3.png" alt="">
+					</div>
+					<div class="details">
+						<p>Искусство и практика обучающейся организации</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <div class="promo__inner">
 			<div class="slider">
 				<div class="slider__inner">
 					<article class="slider__item">
 						<h2 class="slider__item-title">Название книги</h2>
 						<p class="slider__item-descr">Новое поступление книги «Симпсоны и их математические секреты»</p>
-						<a href=""><img src="src/img/books/simpsony-i-ikh-matematicheskie-sekrety_2x.png" alt="" class="slider__item-img"></a>
+						<a href=""><img src="img/books/simpsony-i-ikh-matematicheskie-sekrety_2x.png" alt="" class="slider__item-img"></a>
 					</article>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	
@@ -164,5 +213,15 @@
 		</div>
 	</footer> -->
   <script type="module" src="./js/script.js"></script>
+  <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 </body>
 </html>
