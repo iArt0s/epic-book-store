@@ -8,8 +8,8 @@
   display: flex;
 
   @media (min-width: $screen-s) {
-  	justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
   }
 
   @media (min-width: $screen-m) {
@@ -21,26 +21,26 @@
   }
 
   &__inner {
-    margin: 0 auto;
-    display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $screen-s) {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
    } 
   }
   &__worktime {
-  	@media (min-width: $screen-s) {
-    display: none;
+  @media (min-width: $screen-s) {
+  display: none;
     }
   }
   &__logo {
-  	@media (min-width: $screen-s) {
-    justify-content: flex-start;
-    flex-grow: 1;
+  @media (min-width: $screen-s) {
+  justify-content: flex-start;
+  flex-grow: 1;
     }
   }
 }

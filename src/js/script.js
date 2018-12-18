@@ -2,10 +2,12 @@ import addToPage from './modules/addToPage.js';
 // import data from './modules/booksData.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
+import mySwiper from "../../node_modules/swiper/dist/js/swiper.min.js";
 
 
 
-var mySwiper = new Swiper ('.swiper-container', {
+
+var carousel = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
