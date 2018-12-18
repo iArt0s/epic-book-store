@@ -46,6 +46,15 @@ function copyHTML() {
 
 exports.copyHTML = copyHTML;
 
+function copyVendorsJs() {
+  return src([
+      'node_modules/picturefill/dist/picturefill.min.js'
+     ])
+    .pipe(dest(`${dir.build}js/`));
+}
+
+exports.copyVendorsJs = copyVendorsJs;
+
 
 function copyImg() {
   return src(`${dir.src}img/**/*.{jpg,jpeg,png,gif,svg,webp}`)
@@ -129,6 +138,6 @@ function serve() {
 
 exports.default = series(
  clean,
- parallel(styles, copyHTML, copyImg, copyFonts, javascript),
+ parallel(styles, copyHTML, copyImg, copyVendorsJs, copyFonts, javascript),
  serve
 );
