@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Документ</title>
- <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
@@ -48,7 +49,7 @@
 				<!-- Slides -->
 				<div class="swiper-slide">
 					<div class="imgBx">
-						<img src="/img/sl1.png" alt="">
+						<img src="src/img/sl1.png" alt="">
 					</div>
 					<div class="details">
 						<p>Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</p>
@@ -56,7 +57,7 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="imgBx">
-						<img src="/img/sl2.png" alt="">
+						<img src="src/img/sl2.png" alt="">
 					</div>
 					<div class="details">
 						<p>Книга про правила российского руководителя</p>
@@ -64,7 +65,7 @@
 				</div>
 				<div class="swiper-slide">
 					<div class="imgBx">
-						<img src="/img/sl3.png" alt="">
+						<img src="src/img/sl3.png" alt="">
 					</div>
 					<div class="details">
 						<p>Искусство и практика обучающейся организации</p>
@@ -125,7 +126,7 @@
 			</ul>
 		</div>
 		<div class="catalog__list-wrap">
-			<div class="catalog__list j-catalog__list">
+			<div class="j-catalog__list">
 			</div>
 			<ul class="page">
 				<li class="page__list"><a href="#" class="page__link">1</a><</li>
@@ -212,6 +213,15 @@
 		</div>
 	</footer> -->
   <script type="module" src="./js/script.js"></script>
+  <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 </body>
 </html>
