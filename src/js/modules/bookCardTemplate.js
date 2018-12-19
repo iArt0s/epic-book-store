@@ -4,7 +4,7 @@ const bookCardTemplate = {
 	tag: 'div' ,
 	tagClass: 'product-card-mini' ,
 	setContent: function (item) {
-		return `<article class="j-product-card-mini">
+		return `<article class="product-card-mini">
           <a href="" class="product-card-mini__img-wrap">
           	<img src="img/books/${item.uri}.png" alt="" class="product-card-mini__img">
           </a>

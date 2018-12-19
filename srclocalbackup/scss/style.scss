@@ -1,0 +1,30 @@
+@import './node_modules/normalize.css/normalize';
+
+@import './node_modules/swiper/dist/css/swiper.min';
+
+@import 'variables';
+
+@import 'fonts';
+
+@import 'blocks/global.scss';
+
+@import 'blocks/page-header.scss';
+
+@import 'blocks/main-nav.scss';
+
+@import 'blocks/promo.scss';
+
+@import 'blocks/slider.scss';
+
+@import 'blocks/catalog.scss';
+
+// @import 'blocks/page.scss';
+
+@import 'blocks/delivery.scss';
+
+@import 'blocks/newitems.scss';
+
+@import 'blocks/footer.scss';
+
+
+@import 'blocks/page';
