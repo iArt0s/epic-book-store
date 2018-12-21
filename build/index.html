@@ -8,6 +8,8 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 
@@ -70,7 +72,7 @@
 						<p>Искусство и практика обучающейся организации</p>
 					</div>
 				</div>
-				
+
 			</div>
 
 			<!-- If we need navigation buttons -->
@@ -100,9 +102,9 @@
 				</div>
 			</div>
 		</div> -->
-	</div>
+	<!-- </div> -->
 
-	
+
 	<section class="catalog">
 		<h1 class="catalog__title">Каталог</h1>
 		<div class="catalog__tabs-wrap">
@@ -139,24 +141,36 @@
 		</div>
 	</section>
 
-	<!-- <section class="delivery">
+	<section class="delivery">
 		<h2 class="delivery__title">Доставим в любое место</h2>
 		<p>// ну почти в любое</p>
 		<div class="delivery-box">
-			<img class="delivery-box__icon" src="img/SVG/icon_book.svg" alt="">
-			<p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+          <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#icon_book"></use>
+          </svg>
+<!-- 			<img class="delivery-box__icon" src="img/SVG/icon_book.svg" alt="">
+ -->			<p class="delivery-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
 		</div>
 		<div class="delivery-box">
-			<img class="delivery-box__icon" src="img/SVG/icon_box.svg" alt="">
-			<p class="delivery-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+      <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#icon_box"></use>
+          </svg>
+<!-- 			<img class="delivery-box__icon" src="img/SVG/icon_box.svg" alt="">
+ -->			<p class="delivery-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
 		</div>
 		<div class="delivery-box">
-			<img class="delivery-box__icon" src="img/SVG/icon_delivery.svg" alt="">
-			<p class="delivery-box__desc">Бесплатно доставляем заказы от  3 000  по всей России.</p>
+      <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#icon_delivery"></use>
+          </svg>
+<!-- 			<img class="delivery-box__icon" src="img/SVG/icon_delivery.svg" alt="">
+ -->			<p class="delivery-box__desc">Бесплатно доставляем заказы от  3 000  по всей России.</p>
 		</div>
 		<div class="delivery-box">
-			<img class="delivery-box__icon" src="img/SVG/icon_map.svg" alt="">
-			<p class="delivery-box__desc">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу - бесплатно.</p>
+      <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#icon_map"></use>
+          </svg>
+<!-- 			<img class="delivery-box__icon" src="img/SVG/icon_map.svg" alt="">
+ -->			<p class="delivery-box__desc">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу - бесплатно.</p>
 		</div>
 	</section>
 
@@ -210,7 +224,7 @@
 			</nav>
 
 		</div>
-	</footer> -->
+	</footer>
   <script type="module" src="./js/script.js"></script>
 
 </body>

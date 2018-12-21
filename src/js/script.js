@@ -76,9 +76,9 @@ tabsArray.forEach(function(tab) {
 	link.addEventListener('click', function(event) {
 		event.preventDefault();
 		data1.type = event.target.dataset.type;
-	
+
 		const dataAjax = createDataAjax();
-	
+
 		sendRequest(dataAjax, function(responseObj) {
 
 			if (wrap.children) {

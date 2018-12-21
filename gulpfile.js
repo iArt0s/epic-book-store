@@ -19,6 +19,8 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 
 const ghpages = require('gh-pages');
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
 const path = require('path');
 
 
@@ -48,8 +50,9 @@ exports.copyHTML = copyHTML;
 
 function copyVendorsJs() {
   return src([
-      'node_modules/picturefill/dist/picturefill.min.js'
-     ])
+      'node_modules/picturefill/dist/picturefill.min.js',
+      './node_modules/svg4everybody/dist/svg4everybody.min.js',
+    ])
     .pipe(dest(`${dir.build}js/`));
 }
 
@@ -64,6 +67,23 @@ function copyImg() {
 }
 
 exports.copyImg = copyImg;
+
+function buildSvgSprite() {
+  return src(`${dir.src}svg-sprite/*.svg`)
+    .pipe(svgmin(function (file) {
+      return {
+        plugins: [{
+          cleanupIDs: { minify: true }
+        }]
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(`${dir.build}img/`));
+}
+exports.buildSvgSprite = buildSvgSprite;
+
+
 
 
 function copyFonts() {
@@ -134,10 +154,14 @@ function serve() {
     javascript,
     browserSync.reload
     ));
+  watch(`${dir.src}svg-sprite/*.svg`).on('change', series(
+    buildSvgSprite,
+    browserSync.reload
+    ));
 }
 
 exports.default = series(
  clean,
- parallel(styles, copyHTML, copyImg, copyVendorsJs, copyFonts, javascript),
+ parallel(styles, copyHTML, copyImg, buildSvgSprite, copyVendorsJs, copyFonts, javascript),
  serve
 );
