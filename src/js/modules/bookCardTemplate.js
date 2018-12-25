@@ -10,7 +10,7 @@ const bookCardTemplate = {
           </a>
           <h2 class="product-card-mini__title"><a href="">${item.name}</a></h2>
           <p class="product-card-mini__descr">${item.desc}</p>
-          <div class="product-card-mini__price">${item.price}</div>
+          <div class="product-card-mini__price">${item.price} ₽</div>
         </article>`
 	}
 }

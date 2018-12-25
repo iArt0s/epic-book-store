@@ -146,7 +146,7 @@ function serve() {
   watch([
     `${dir.src}scss/**/*.scss`,
   ], { delay: 100 }, styles);
-  watch(`${dir.src}src/*.html`).on('change', series(
+  watch(`${dir.src}*.html`).on('change', series(
     copyHTML,
     browserSync.reload
     ));

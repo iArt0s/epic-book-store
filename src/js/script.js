@@ -5,6 +5,13 @@ import sendRequest from './modules/sendRequest.js';
 import Swiper from "../../node_modules/swiper/dist/js/swiper.min.js";
 
 
+let burger = document.querySelector(".main-nav__burger");
+let menu = document.querySelector(".main-nav__toggle");
+
+menu.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  notify.classList.toggle('active');
+}, false);
 
 
 var carousel = new Swiper ('.swiper-container', {
