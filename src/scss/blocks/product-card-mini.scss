@@ -10,7 +10,7 @@
     @media(min-width: $screen-m) {}
 
     @media(min-width: $screen-l) {
-    margin-left: 40px;
+    margin-left: 20px;
     // margin-bottom: 78px;
     }
 
@@ -54,6 +54,7 @@
   }
 
   &__price {
+    margin-top: auto;
     margin: 0;
     padding-top: 18px;
     font-weight: 700;

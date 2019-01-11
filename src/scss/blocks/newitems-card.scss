@@ -1,0 +1,59 @@
+.newitems-card {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 512px;
+
+  @media (min-width: $screen-s) {
+    margin-right: 38px;
+  }
+
+  @media (min-width: $screen-m) {
+    margin-right: 38px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin-right: 38px;
+  }
+
+  &__img-wrap {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__img-wrap:hover {
+    box-shadow: 0px 0px 50px 0px rgba(215,86,157,1);
+  }
+
+  &__img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: $font-size-m;
+
+    @media (min-width: $screen-s) {
+    }
+
+    @media (min-width: $screen-m) {
+    }
+
+    @media (min-width: $screen-l) {
+    }
+  }
+
+  &__link {
+    color: $text-color;
+  }
+
+  &__descr {
+    margin: 0;
+    padding-top: 25px;
+    align-content: flex-end;
+    font-size: $font-size-s;
+    font-weight: 400;
+    font-style: italic;
+  }
+}

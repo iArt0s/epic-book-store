@@ -20,11 +20,11 @@
   	padding: 0;
     height: 50px;
 
-  	@media(min-width: $screen-s) {}
-
   	@media(min-width: $screen-m) {}
 
-  	@media(min-width: $screen-l) {}
+  	@media(min-width: $screen-l) {
+      // padding: 0 30;
+    }
 
 
   }
@@ -32,9 +32,8 @@
 
   &__tabs {
   	display: flex;
-    padding-top: 10px;
+    // padding-top: 10px;
 
-  	@media(min-width: $screen-s) {}
 
   	@media(min-width: $screen-m) {}
 
@@ -82,6 +81,7 @@
     margin: 0 auto;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-top: 40px;
     @media (min-width: $screen-l) {
     width: 1280px;
     padding-top: 52px;

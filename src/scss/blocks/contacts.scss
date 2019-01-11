@@ -1,0 +1,75 @@
+.contacts {
+  display: flex;
+  min-height: 185px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $bcg;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+
+    @media (min-width: $screen-m) {
+      width: 680px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1160px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    padding-top: 35px;
+
+    @media (min-width: $screen-m) {
+
+    }
+
+    @media (min-width: $screen-l) {
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 45px;
+
+    @media (min-width: $screen-m) {
+      padding-left: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $screen-l) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-top: 55px;
+    }
+  }
+
+  &__list-item {
+    margin: 0;
+    padding-bottom: 27px;
+
+    @media (min-width: $screen-m) {
+      padding-bottom: 27px;
+      padding-right: 70px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-bottom: 0;
+      padding-right: 100px;
+    }
+  }
+}

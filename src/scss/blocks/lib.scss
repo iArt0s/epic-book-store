@@ -1,0 +1,39 @@
+
+.lib {
+  padding: 70px 25px 120px 25px;
+  background-image: linear-gradient(rgba(220, 117, 172, 0.7), rgba(220, 117, 172, 0.7)), url('../../img/contlibimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $screen-m) {
+    padding: 70px 80px 120px 80px;
+  }
+
+  p{
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+
+    &:first-child {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 24px;
+
+      @media (min-width: $screen-m) {
+        line-height: 40px;
+        font-size: 36px;
+      }
+
+      &:before {
+        display: block;
+        content: '';
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 15px;
+        background-image: url('../../img/shape.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

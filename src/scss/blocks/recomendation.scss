@@ -1,0 +1,238 @@
+.recomendations {
+
+  &__container {
+    margin: 0 auto;
+    padding: 50px 30px 95px 30px;
+    width: 100%;
+
+    @media (min-width: $screen-m) {
+      padding: 80px 0 135px;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-l) {
+      width: 1160px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+
+    @media (min-width: $screen-m) {
+      font-size: 50px;
+    }
+  }
+
+  &__wrapper {
+
+    @media (min-width: $screen-m) {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: $screen-l) {
+      grid-template-rows: 170px 170px 180px 170px;
+      margin: 0 0 0 -20px;
+      width: 1180px;
+    }
+  }
+
+  &__article {
+
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $screen-m) {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    p {
+      line-height: 30px;
+    }
+
+    &--1,
+    &--4,
+    &--5 {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    &--1 {
+      padding: 25px 30px;
+      background-color: #fff;
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #0f0fc9;
+        font-weight: 700;
+      }
+    }
+
+    &--2 {
+      text-align: center;
+      color: #fff;
+      background-image: linear-gradient(rgba(15, 15, 201, 0.7), rgba(15, 15, 201, 0.7)), url('../../img/recAutumn.png');
+
+      p:first-child {
+        margin-bottom: 25px;
+        padding-top: 30px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      @media (min-width: $screen-m) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      @media (min-width: $screen-l) {
+        grid-row-end: 3;
+      }
+    }
+
+    &--3 {
+      display: flex;
+      padding: 30px 35px;
+      text-align: center;
+      color: #fff;
+      background-image: linear-gradient(rgba(15, 15, 201, 0.7), rgba(15, 15, 201, 0.7)), url('../../img/recCharts.png');
+
+      p {
+        margin: auto 0;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      @media (min-width: $screen-m) {
+        padding: 0 35px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    }
+
+    &--4 {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 15px 10px 10px;
+      background-color: #fff;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: auto;
+        padding: 15px 0;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      @media (min-width: $screen-m) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      @media (min-width: $screen-l) {
+        grid-column-end: 3;
+        grid-row-start: 3;
+      }
+    }
+
+    &--5 {
+      padding: 25px;
+      background-color: #ce6194;
+      color: #fff;
+
+      @media (min-width: $screen-m) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      @media (min-width: $screen-l) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    }
+
+    &--6 {
+      padding-top: 65px;
+      padding-bottom: 30px;
+      color: #fff;
+      text-align: center;
+      background-image: linear-gradient(rgba(173, 33, 98, 0.7), rgba(173, 33, 98, 0.7)), url('../../img/recOLD.png');
+
+      p:first-child {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      @media (min-width: $screen-m) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: $screen-l) {
+        padding-right: 0;
+        padding-left: 0;
+        grid-column-start: 1;
+      }
+    }
+
+    &--7 {
+
+      h3 {
+          line-height: 30px;
+        }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      @media (min-width: $screen-m) {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        padding-left: 26px;
+        margin-top: 30px;
+      }
+
+      @media (min-width: $screen-l) {
+        padding-left: 26px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

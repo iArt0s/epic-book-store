@@ -5,13 +5,16 @@ import sendRequest from './modules/sendRequest.js';
 import Swiper from "../../node_modules/swiper/dist/js/swiper.min.js";
 
 
-let burger = document.querySelector(".main-nav__burger");
-let menu = document.querySelector(".main-nav__toggle");
+// let burger = document.querySelector(".main-nav__burger");
+// let menu = document.querySelector(".main-nav__toggle");
+let menu = document.querySelector("#menu");
+let burger = document.querySelector(".main-nav__icon--toggle");
+menu.classList.add('hide');
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  notify.classList.toggle('active');
-}, false);
+burger.addEventListener('click', (e) => {
+  menu.classList.toggle('hide');
+  e.target.classList.toggle('is-active')
+})
 
 
 var carousel = new Swiper ('.swiper-container', {
@@ -36,6 +39,24 @@ var carousel = new Swiper ('.swiper-container', {
     },
   })
 
+
+
+// // Функция ymaps.ready() будет вызвана, когда
+//     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+//     ymaps.ready(init);
+//     function init(){
+//         // Создание карты.
+//         var myMap = new ymaps.Map("map", {
+//             // Координаты центра карты.
+//             // Порядок по умолчанию: «широта, долгота».
+//             // Чтобы не определять координаты центра карты вручную,
+//             // воспользуйтесь инструментом Определение координат.
+//             center: [55.76, 37.64],
+//             // Уровень масштабирования. Допустимые значения:
+//             // от 0 (весь мир) до 19.
+//             zoom: 7
+//         });
+//     }
 
 
 

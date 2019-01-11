@@ -1,63 +1,101 @@
-.main-nav{
-  display: flex;
-  margin: 0;
-  padding: 0;
+.main-nav {
 
-
-	@media (min-width: $screen-s) {
-		display: none;
+  @media (min-width: $screen-m) {
+    display: flex;
   }
 
-  @media (min-width: $screen-l) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    }
-
-&__list {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: $font-size-xs;
-
-    @media (min-width: $screen-s) {
-      display: none;
-    }
+  &__list {
+    display: none;
 
     @media (min-width: $screen-m) {
       display: flex;
-      order: 3;
+      margin-right: 20px;
+      align-items: baseline;
     }
 
     @media (min-width: $screen-l) {
-      order: 3;
+      margin-right: 60px;
     }
   }
 
-  &__item {
-    margin: 0;
-    padding: 0;
-    padding-left: 20px;
-    list-style: none;
-  }
-
   &__link {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
     font-weight: 700;
-    color: $text-color;
+    text-transform: lowercase;
+
+    @media (min-width: $screen-m) {
+      padding-right: 20px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-  &__link:hover {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: $pink;
-    font-weight: 700;
+  &__icon--tel {
+    display: none;
+
+    @media (min-width: $screen-m) {
+      display: block;
+    }
+  }
+
+  &__icon--basket {
+
+    @media (min-width: $screen-m) {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  &__icon--toggle {
+
+    font-size: 0;
+    position: relative;
+
+    &,
+    &:before,
+    &:after {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      transition: 0.2s ease-in-out;
+      border-radius: 5px;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      will-change: transform;
+    }
+
+    &:before {
+      transform: translateY(-6px);
+    }
+
+    &:after {
+      transform: translateY(6px);
+    }
+
+    @media (min-width: $screen-m) {
+      display: none;
+    }
   }
 }
+  .main-nav__icon--toggle.is-active {
+    transform: rotate(-45deg);
+
+    &:before,
+    &:after {
+      transform: translateX(0) rotate(-90deg);
+    }
+  }
+
+
+
+
+
+

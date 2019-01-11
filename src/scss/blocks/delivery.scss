@@ -1,0 +1,126 @@
+.delivery {
+  padding-top: 160px;
+  position: relative;
+  border: solid 8px $gray;
+  margin: 0 12px;
+
+
+    @media (min-width: $screen-m) {
+    margin: 0 40px;
+    }
+
+    @media (min-width: $screen-l) {
+    margin: 0 32px;
+    }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: $bcg;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 10%;
+    width: 30%;
+    height: 8px;
+    background-color: $bcg;
+    z-index: 1;
+
+
+  }
+
+  &__space {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 55px 60px 65px 60px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: $font-size-l;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: $font-size-s;
+    color: #676767;
+
+    @media (min-width: $screen-s) {
+      padding-top: 32px;
+    }
+
+    @media (min-width: $screen-m) {
+      padding-top: 20px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-top: 30px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    margin: 0 auto;
+
+    @media (min-width: $screen-s) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $screen-m) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 44px;
+      padding-bottom: 80px;
+    }
+
+    @media (min-width: $screen-l) {
+      margin-top: 100px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-bottom: 84px;
+      padding-right: 55px;
+    }
+  }
+
+  &-wrapper-box {
+    width: 260px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+
+    @media (min-width: $screen-s) {
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $screen-s) {
+      padding-bottom: 55px;
+    }
+
+    @media (min-width: $screen-l) {
+      padding-bottom: 0;
+    }
+  }
+
+  &-wrapper-box__desc {
+    font-size: $font-size-xs;
+    font-weight: 500;
+    text-align: center;
+  }
+}

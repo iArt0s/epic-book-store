@@ -1,3 +1,44 @@
 .page {
   font-family: $font-family;
+    list-style: none;
+    // padding-top: 60px;
+
+&__list {
+    display: inline-block;
+
+    & a {
+      height: 20px;
+      line-height: 20px;
+      padding-left: 7px;
+      padding-right: 7px;
+      color: #000;
+      font-weight: 700;
+      font-family: sans-serif;
+      text-decoration: none;
+      border-radius: 20px;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: none;
+        background-color: pink;
+      }
+
+      &:active {
+        color: gray;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+
+    &.active a {
+      color: #f00;
+      background-color: pink;
+
+      &:active {
+        color: gray;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
 }
