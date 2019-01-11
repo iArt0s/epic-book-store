@@ -4,7 +4,6 @@
   border: solid 8px $gray;
   margin: 0 12px;
 
-
     @media (min-width: $screen-m) {
     margin: 0 40px;
     }
@@ -56,10 +55,8 @@
     font-weight: 400;
     font-size: $font-size-s;
     color: #676767;
+    padding-top: 32px;
 
-    @media (min-width: $screen-s) {
-      padding-top: 32px;
-    }
 
     @media (min-width: $screen-m) {
       padding-top: 20px;
@@ -73,12 +70,10 @@
   &-wrapper {
     display: flex;
     margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
 
-    @media (min-width: $screen-s) {
-      flex-direction: column;
-      flex-wrap: wrap;
-      padding-bottom: 60px;
-    }
 
     @media (min-width: $screen-m) {
       flex-direction: row;
@@ -104,10 +99,7 @@
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
-
-    @media (min-width: $screen-s) {
-      padding-bottom: 60px;
-    }
+    padding-bottom: 60px;
 
     @media (min-width: $screen-s) {
       padding-bottom: 55px;
