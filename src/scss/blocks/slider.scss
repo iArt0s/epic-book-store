@@ -1,0 +1,296 @@
+.swiper-container {
+  padding-bottom: 70px;
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {
+  display: flex;
+  margin: auto;
+}
+
+.swiper-slide-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $screen-s) {
+
+  }
+
+  @media (min-width: $screen-m) {
+
+  }
+
+  @media (min-width: $screen-l) {
+    padding-top: 52px;
+  }
+}
+
+.swiper-title {
+  display: none;
+}
+
+.swiper-descr {
+  display: flex;
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+    width: 284px;
+    padding-top: 34px;
+    padding-left: 32px;
+    padding-bottom: 28px;
+    font-size: $font-size-xs;
+  @media (min-width: $screen-s) {
+
+  }
+
+  @media (min-width: $screen-m) {
+    width: 324px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    font-size: $font-size-s;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 400px;
+    padding-left: 40px;
+    font-size: $font-size-s;
+  }
+}
+
+.swiper-border {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  border: solid 8px $gray;
+
+  @media (min-width: $screen-s) {
+    margin: 0 auto;
+    padding: 0;
+    width: 320px;
+    height: 275px;
+  }
+
+  @media (min-width: $screen-m) {
+    width: 556px;
+    height: 310px;
+  }
+
+  @media (min-width: $screen-l) {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+.swiper-sign {
+  display: flex;
+  width: max-content;
+  margin: 0;
+  font-weight: 700;
+
+  @media (min-width: $screen-s) {
+    font-size: $font-size-m;
+    margin: 0;
+    padding-left: 16px;
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  @media (min-width: $screen-m) {
+    padding-top: 50px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $screen-l) {
+    margin: 0;
+    padding-left: 36px;
+    padding-top: 50px;
+    font-size: $font-size-xl;
+  }
+}
+
+.swiper-link {
+
+  @media (min-width: $screen-s) {
+    padding-left: 16px;
+  }
+
+  @media (min-width: $screen-m) {
+    padding-left: 36px;
+  }
+
+  @media (min-width: $screen-l) {
+    padding-left: 36px;
+  }
+}
+
+.swiper-pic {
+  @media (min-width: $screen-s) {
+    display: none;
+  }
+
+  @media (min-width: $screen-m) {
+    display: none;
+  }
+
+  @media (min-width: $screen-l) {
+    display: flex;
+    width: 305px;
+    height: 428px;
+    padding: 0;
+    margin-left: 110px;
+    margin-top: 80px;
+    margin-right: 80px;
+  }
+}
+
+.swiper-img {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: auto;
+}
+
+.swiper-btnnext {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $pink-light;
+  z-index: 1;
+
+  @media (min-width: $screen-s) {
+    bottom: 0;
+    right: 110px;
+  }
+
+  @media (min-width: $screen-m) {
+    top: 50%;
+    right: 40px;
+  }
+
+  @media (min-width: $screen-l) {
+    top: 50%;
+    right: 0;
+  }
+}
+
+
+.swiper-btnnext:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  top: 16px;
+  left: 14px;
+  transform: rotate(35deg);
+  background-color: $pink;
+}
+
+// .swiper-btnprev.swiper-button-disabled:before {
+//   background-color: #000 ;
+// }
+
+
+// .swiper-btnnext:hover::before {
+//   background-color: #fff;
+// }
+
+.swiper-btnnext:after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  bottom: 16px;
+  left: 14px;
+  transform: rotate(-35deg);
+  background-color: $pink;
+}
+
+.swiper-btnnext:hover::after {
+  background-color: #fff;
+}
+
+.swiper-btnnext:hover {
+  background-color: $pink;
+}
+
+.swiper-btnprev {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $pink-light;
+  z-index: 1;
+
+   @media (min-width: $screen-s) {
+    bottom: 0;
+    left: 110px;
+  }
+
+  @media (min-width: $screen-m) {
+    top: 50%;
+    left: 40px;
+  }
+
+  @media (min-width: $screen-l) {
+    top: 50%;
+    left: 0;
+  }
+}
+
+.swiper-btnprev:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  top: 16px;
+  left: 10px;
+  transform: rotate(-35deg);
+  background-color: $pink;
+}
+
+.swiper-btnprev:hover::before {
+  background-color: #fff;
+  outline: 0;
+}
+
+.swiper-btnprev:after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  bottom: 16px;
+  left: 10px;
+  transform: rotate(35deg);
+  background-color: $pink;
+}
+
+.swiper-btnprev:hover::after {
+  background-color: #fff;
+}
+
+.swiper-btnprev:hover {
+  background-color: $pink;
+  outline: 0;
+}
+
+.swiper-button-disabled:focus {
+  background-color: $gray;
+}
+
+.swiper-button-disabled:before {
+  background-color: $gray;
+  background-color: white;
+}
+
+.swiper-button-disabled:after {
+  background-color: $gray;
+  background-color: white;
+}

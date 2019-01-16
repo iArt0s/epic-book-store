@@ -45,63 +45,61 @@
   </header>
 
 
-<div class="promo">
-  <!-- Slider main container -->
-  <div class="swiper-container">
-   <!-- Additional required wrapper -->
-   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <div class="slider__item">
-        <div class="imgBx">
-          <img src="/img/sl1.png" alt="">
+<main>
+
+  <section class="promo">
+    <div class="promo__inner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <h2 class="swiper-title">Название книги</h2>
+              <p class="swiper-descr">Новое поступление книги «Симпсоны и&nbsp;их математические секреты»</p>
+              <div class="swiper-border">
+                <p class="swiper-sign">Для поклонников сериала&nbsp; «Симпсоны» и&nbsp;для всех, кому интересна&nbsp;математика.</p>
+                <a href="books_inner.html" class="swiper-link">Хочу узнать о книге больше</a>
+              </div>
+            </div>
+            <div class="swiper-pic">
+              <img src="img/sl1.jpg" alt="#" class="swiper-img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <h2 class="swiper-title">Название книги</h2>
+              <p class="swiper-descr">Новое поступление книги «45 татуировок  менеджера»</p>
+              <div class="swiper-border">
+                <p class="swiper-sign">Книга про правила российского руководителя</p>
+                <a href="books_inner.html" class="swiper-link">Хочу узнать о книге больше</a>
+              </div>
+            </div>
+            <div class="swiper-pic">
+              <img src="img/sl2.jpg" alt="#" class="swiper-img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <h2 class="swiper-title">Название книги</h2>
+              <p class="swiper-descr">Узнайте как обучить персонал с новой книгой «Пятая дисциплина»</p>
+              <div class="swiper-border">
+                <p class="swiper-sign">Искусство&nbsp;и&nbsp;практика обучающейся организации</p>
+                <a href="books_inner.html" class="swiper-link">Хочу узнать о книге больше</a>
+              </div>
+            </div>
+            <div class="swiper-pic">
+              <img src="img/sl3.jpg" alt="#" class="swiper-img">
+            </div>
+          </div>
         </div>
-        <div class="details">
-          <p>Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</p>
-        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-btnnext"></div>
+        <div class="swiper-btnprev"></div>
       </div>
     </div>
-    <div class="swiper-slide">
-      <div class="slider__item">
-       <div class="imgBx">
-        <img src="/img/sl2.png" alt="">
-      </div>
-      <div class="details">
-        <p>Книга про правила российского руководителя</p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="slider__item">
-       <div class="imgBx">
-        <img src="/img/sl3.png" alt="">
-      </div>
-      <div class="details">
-        <p>Искусство и практика обучающейся организации</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- If we need navigation buttons -->
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-</div>
+  </section>
 
 
 
-		<!-- <div class="promo__inner">
-			<div class="slider">
-				<div class="slider__inner">
-					<article class="slider__item">
-						<h2 class="slider__item-title">Название книги</h2>
-						<p class="slider__item-descr">Новое поступление книги «Симпсоны и их математические секреты»</p>
-						<a href=""><img src="img/books/simpsony-i-ikh-matematicheskie-sekrety_2x.png" alt="" class="slider__item-img"></a>
-					</article>
-				</div>
-			</div>
-		</div> -->
-   <!-- </div> -->
 
 
    <section class="catalog">
@@ -155,17 +153,18 @@
         <p class="delivery-wrapper-box__desc">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
       </div>
       <div class="delivery-wrapper-box">
-        <svg width="58" height="42">
-          <use xlink:href="img/sprite.svg#icon_box"></use>
-        </svg>
-        <p class="delivery-wrapper-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
-      </div>
-      <div class="delivery-wrapper-box">
         <svg width="67" height="35">
           <use xlink:href="img/sprite.svg#icon_delivery"></use>
         </svg>
         <p class="delivery-wrapper-box__desc">Бесплатно доставляем заказы от  3 000  по всей России.</p>
       </div>
+      <div class="delivery-wrapper-box">
+        <svg width="58" height="42">
+          <use xlink:href="img/sprite.svg#icon_box"></use>
+        </svg>
+        <p class="delivery-wrapper-box__desc">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+      </div>
+
       <div class="delivery-wrapper-box">
         <svg width="52" height="47">
           <use xlink:href="img/sprite.svg#icon_map"></use>
@@ -177,36 +176,38 @@
 </section>
 <section class="newitems">
   <div class="container">
-  <div class="newitems__wrap">
-    <h2 class="newitems__wrap-title">Наши новинки</h2>
-    <a href="#" class="newitems__wrap-link">Все новинки</a>
-  </div>
-  <div class="newitems__list-wrap">
-   <div class="newitems__list">
-    <article class="newitems-card">
-     <a href="" class="newitems-card__img-wrap"><img src="img/logika.png" alt="" class=""></a>
-     <h2 class="newitems-card__title"><a href="">Латеральная логика</a></h2>
-     <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
-   </article>
-   <article class="newitems-card">
-     <a href="" class="newitems-card__img-wrap"><img src="img/lie.png" alt="" class=""></a>
-     <h2 class="newitems-card__title"><a href="">Путеводитель по лжи</a></h2>
-     <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
-   </article>
-   <article class="newitems-card">
-     <a href="" class="newitems-card__img-wrap"><img src="img/dao.png" alt="" class=""></a>
-     <h2 class="newitems-card__title"><a href="">Дао физики</a></h2>
-     <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
-   </article>
-   <article class="newitems-card">
-     <a href="" class="newitems-card__img-wrap"><img src="img/ne.png" alt="" class=""></a>
-     <h2 class="newitems-card__title"><a href="">Не очевидно</a></h2>
-     <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
-   </article>
+    <div class="newitems__wrap">
+      <h2 class="newitems__wrap-title">Наши новинки</h2>
+      <a href="#" class="newitems__wrap-link">Все новинки</a>
+    </div>
+    <div class="newitems__list-wrap">
+     <div class="newitems__list">
+      <article class="newitems-card">
+       <a href="" class="newitems-card__img-wrap"><img src="img/logika.png" alt="" class=""></a>
+       <h2 class="newitems-card__title"><a href="">Латеральная логика</a></h2>
+       <p class="newitems-card__descr">Головоломный путь к нестандартному мышлению</p>
+     </article>
+     <article class="newitems-card">
+       <a href="" class="newitems-card__img-wrap"><img src="img/lie.png" alt="" class=""></a>
+       <h2 class="newitems-card__title"><a href="">Путеводитель по лжи</a></h2>
+       <p class="newitems-card__descr">Критическое мышление в эпоху постправды</p>
+     </article>
+     <article class="newitems-card">
+       <a href="" class="newitems-card__img-wrap"><img src="img/dao.png" alt="" class=""></a>
+       <h2 class="newitems-card__title"><a href="">Дао физики</a></h2>
+       <p class="newitems-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
+     </article>
+     <article class="newitems-card">
+       <a href="" class="newitems-card__img-wrap"><img src="img/ne.png" alt="" class=""></a>
+       <h2 class="newitems-card__title"><a href="">Не очевидно</a></h2>
+       <p class="newitems-card__descr">Как выявлять тренды раньше других</p>
+     </article>
+   </div>
  </div>
-</div>
-</div>
 </section>
+
+
+</main>
 
   <footer class="page-footer">
     <div class="page-footer__container">
@@ -235,9 +236,9 @@
 
 
 
+<script src="https://api-maps.yandex.ru/2.1.68/?lang=ru_RU" type="text/javascript"></script>
 
-
-<script type="module" src="./js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

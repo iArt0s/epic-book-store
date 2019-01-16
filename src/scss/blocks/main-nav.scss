@@ -28,6 +28,8 @@
 
     &:hover {
       text-decoration: none;
+          color: $pink;
+
     }
   }
 
@@ -95,7 +97,6 @@
   }
 
 
-
-
-
-
+.linkactive {
+  color: $pink;
+}

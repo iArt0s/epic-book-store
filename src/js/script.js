@@ -20,7 +20,7 @@ burger.addEventListener('click', (e) => {
 var carousel = new Swiper ('.swiper-container', {
     // Optional parameters
     // direction: 'vertical',
-    loop: true,
+    loop: false,
 
     // If we need pagination
     pagination: {
@@ -29,8 +29,8 @@ var carousel = new Swiper ('.swiper-container', {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-btnnext',
+      prevEl: '.swiper-btnprev',
     },
 
     // And if we need scrollbar
@@ -41,22 +41,22 @@ var carousel = new Swiper ('.swiper-container', {
 
 
 
-// // Функция ymaps.ready() будет вызвана, когда
-//     // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-//     ymaps.ready(init);
-//     function init(){
-//         // Создание карты.
-//         var myMap = new ymaps.Map("map", {
-//             // Координаты центра карты.
-//             // Порядок по умолчанию: «широта, долгота».
-//             // Чтобы не определять координаты центра карты вручную,
-//             // воспользуйтесь инструментом Определение координат.
-//             center: [55.76, 37.64],
-//             // Уровень масштабирования. Допустимые значения:
-//             // от 0 (весь мир) до 19.
-//             zoom: 7
-//         });
-//     }
+// Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [55.76, 37.64],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 7
+        });
+    }
 
 
 
@@ -96,7 +96,7 @@ if (wrap) {
 //listener
 const tabsWrap = document.querySelector('.j-catalog__tabs');
 
-const tabsArray = Array.from(tabsWrap.children);
+const tabsArray = Array.prototype.slice.call(tabsWrap.children);
 
 tabsArray.forEach(function(tab) {
 	const link = tab.firstElementChild;

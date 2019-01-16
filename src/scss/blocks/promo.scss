@@ -1,13 +1,51 @@
-.swiper-container{
+// .swiper-container{
 
+//   margin: 0 auto;
+
+//   @media (min-width: 768px) {
+//     width: 762px;
+//   }
+
+//   @media (min-width: $screen-l) {
+//     width: 1160px;
+//   }
+
+// }
+
+
+.promo {
+display: block;
+width: 100%;
+margin: 0 auto;
+padding: 0;
+
+  @media (min-width: $screen-s) {
+      height: 490px;
+    }
+
+    @media (min-width: $screen-m) {
+      height: 480px;
+    }
+
+    @media (min-width: $screen-l) {
+      height: 600px;
+    }
+
+&__inner {
+  display: block;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
-    width: 762px;
+  @media (min-width: $screen-s) {
+    width: 360px;
+  }
+
+  @media (min-width: $screen-m) {
+    width: 768px;
   }
 
   @media (min-width: $screen-l) {
-    width: 1160px;
+    width: 1280px;
+    padding: 0 60px;
   }
-
+}
 }
