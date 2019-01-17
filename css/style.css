@@ -2200,6 +2200,22 @@ input:focus:optional {
   border-color: #d7569c;
   color: #1f1f1f; }
 
+input:required {
+  border-color: #f4d4e4;
+  color: #1f1f1f; }
+
+input:focus:required {
+  border-color: #d7569c;
+  color: #1f1f1f; }
+
+input:optional {
+  border-color: #f4d4e4;
+  color: #1f1f1f; }
+
+input:focus:optional {
+  border-color: #d7569c;
+  color: #1f1f1f; }
+
 #map {
   margin-top: 50px;
   width: 100%;
