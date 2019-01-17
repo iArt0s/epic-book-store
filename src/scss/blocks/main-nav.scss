@@ -1,5 +1,5 @@
 .main-nav {
-
+position: relative;
   @media (min-width: $screen-m) {
     display: flex;
   }
@@ -88,11 +88,22 @@
   }
 }
   .main-nav__icon--toggle.is-active {
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
+      position: absolute;
+      top: 45px;
+      right: -20px;
+      z-index: 1;
+      display: block;
+      padding: 20px 0 0 50px;
+      width: 195px;
+      height: 140px;
+      background-color: rgba(244, 215, 230, 0.8);
+
 
     &:before,
     &:after {
       transform: translateX(0) rotate(-90deg);
+
     }
   }
 

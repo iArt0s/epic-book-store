@@ -1,48 +1,58 @@
-.booksinner {
+.bookinner {
   display: flex;
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: $bcg;
 
-  &__wrapper {
+  &__wrap {
     display: grid;
     position: relative;
     padding-top: 40px;
     margin: 0 auto;
-    width: 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "img"
-      "booksinfo"
-      "discr";
 
-    @media (min-width: $screen-m) {
+    @media (min-width: $screen-s) {
+      display: grid;
+      width: 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "img"
+        "bookinfo"
+        "discr";
+    }
+
+    @media (min-width: $screen-s) {
+      display: grid;
       width: 688px;
       grid-template-columns: 1fr 2fr;
       grid-template-areas:
         "img  title"
-        "img  booksinfo"
-        "preview booksinfo"
+        "img  bookinfo"
+        "preview bookinfo"
         "discr discr";
     }
 
     @media (min-width: $screen-l) {
+      display: grid;
       width: 1160px;
       grid-template-columns: 1fr 1fr 2fr;
       grid-template-areas:
         "preview img  title"
-        "preview img  booksinfo"
+        "preview img  bookinfo"
         "preview  discr discr";
     }
   }
 
   &__preview {
     grid-area: preview;
-    border: solid 8px $gray;
-    display: none;
+      border: solid 8px $gray;
 
-    @media (min-width: $screen-m) {
+    @media (min-width: $screen-s) {
+      display: none;
+    }
+
+    @media (min-width: $screen-s) {
       display: flex;
       height: 120px;
       width: 260px;
@@ -67,6 +77,10 @@
     padding: 0;
     margin: 0 auto;
 
+    @media (min-width: $screen-s) {
+
+    }
+
     @media (min-width: $screen-m) {
       width: 76px;
       height: auto;
@@ -78,17 +92,23 @@
     }
   }
 
-  &__imgwrapper {
+  &__imgwrap {
     grid-area: img;
     padding: 0;
     margin: 0;
-    width: 300px;
+
+    @media (min-width: $screen-s) {
+      grid-area: img;
+      width: 300px;
+    }
 
     @media (min-width: $screen-m) {
+      grid-area: img;
       width: 260px;
     }
 
     @media (min-width: $screen-l) {
+      grid-area: img;
       width: 320px;
       margin-left: 64px;
     }
@@ -98,38 +118,44 @@
     width: 100%;
   }
 
-  &__title-wrapper {
+  &__title {
     grid-area: title;
     margin-left: 40px;
     padding: 0;
-    width: 300px;
-    margin-left: 0;
+
+    @media (min-width: $screen-s) {
+      grid-area: title;
+      width: 300px;
+      margin-left: 0;
+    }
 
     @media (min-width: $screen-m) {
+      grid-area: title;
       width: 100%;
       margin-left: 40px;
     }
 
     @media (min-width: $screen-l) {
+      grid-area: title;
       width: 100%;
       margin-left: 40px;
     }
   }
 
-  &__title-author {
+  &__title-name {
     margin: 0;
     font-weight: 700;
     font-size: $font-size-xs;
   }
 
-  &__title-title {
+  &__title-headline {
     margin-top: 12px;
     padding: 0;
     font-weight: 700;
     font-size: 36px;
   }
 
-  &__title-subtitle {
+  &__title-sign {
     padding: 0;
     margin-bottom: 50px;
     font-weight: 500;
@@ -137,24 +163,33 @@
   }
 }
 
-.booksinfo {
-  grid-area: booksinfo;
+.bookinfo {
+  grid-area: bookinfo;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  margin-left: 0;
+
+  @media (min-width: $screen-s) {
+    grid-area: bookinfo;
+    margin-left: 0;
+  }
 
   @media (min-width: $screen-m) {
+    grid-area: bookinfo;
     margin-left: 40px;
   }
 
   @media (min-width: $screen-l) {
+    grid-area: bookinfo;
     margin-left: 0;
   }
 
   &__salecard {
-    margin-top: 36px;
-    width: 300px;
+
+    @media (min-width: $screen-s) {
+      margin-top: 36px;
+      width: 300px;
+    }
 
     @media (min-width: $screen-m) {
       width: 374px;
@@ -193,7 +228,11 @@
     display: flex;
     padding: 0;
     margin: 0 auto;
-    flex-direction: column;
+
+    @media (min-width: $screen-s) {
+      flex-direction: column;
+    }
+
     @media (min-width: $screen-m) {
       flex-direction: row;
       align-items: center;
@@ -205,7 +244,7 @@
     }
   }
 
-  &__basket-button{
+  &__basket-button {
     height: 50px;
     padding: 0;
     border: none;
@@ -213,9 +252,12 @@
     font-weight: 700;
     font-size: $font-size-xs;
     color: #fff;
-    width: 300px;
-    margin-right: 0;
-    order: 2;
+
+    @media (min-width: $screen-s) {
+      width: 300px;
+      margin-right: 0;
+      order: 2;
+    }
 
     @media (min-width: $screen-m) {
       width: 200px;
@@ -230,15 +272,23 @@
     }
   }
 
+  &__basket-button :disabled {
+     background-color: $pink;
+  }
+
   &__basket-num {
     width: 78px;
     height: 50px;
     margin-right: 12px;
     padding: 0;
     border: none;
-    background-color: $gray;
+    background-color: #ababab;
     text-align: center;
-    margin-bottom: 20px;
+    outline: 0;
+
+    @media (min-width: $screen-s) {
+      margin-bottom: 20px;
+    }
 
     @media (min-width: $screen-m) {
       margin-bottom: 0;
@@ -249,15 +299,16 @@
     }
   }
 
-  // &__likesign {
-  //   margin-top: 30px;
-  //   padding: 0;
-  //   font-weight: 400;
-  //   font-style: italic;
-  //   font-size: $font-size-xs;
-  // }
+  &__basket-num:hover {
+    background-color: #dddddd;
+  }
 
-  &__like{
+  &__basket-num:input::valid {
+    background-color: #dddddd;
+    border: solid 2px #ababab;
+  }
+
+  &__likesign {
     position: relative;
     display: flex;
     &:before {
@@ -269,25 +320,25 @@
       background-image: url('../img/icon_like.svg');
       background-repeat: no-repeat;
       background-position: 0 2px;
-    }
-
-    span {
-      font-size: 14px;
-      padding-left: 20px;
-      font-style: italic;
-    }
   }
-
+}
 
   &__discr {
     grid-area: discr;
     margin: 0;
 
+    @media (min-width: $screen-s) {
+      grid-area: discr;
+
+    }
+
     @media (min-width: $screen-m) {
+      grid-area: discr;
       padding-top: 62px;
     }
 
     @media (min-width: $screen-l) {
+      grid-area: discr;
       margin-left: 64px;
       padding-bottom: 96px;
       padding-top: 38px;
@@ -295,15 +346,63 @@
   }
 
   &__text {
-    width: 300px;
+    line-height: 1.5;
+
+    @media (min-width: $screen-s) {
+      width: 300px;
+      margin-bottom: 30px;
+    }
 
     @media (min-width: $screen-m) {
       width: 660px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $screen-l) {
       width: 660px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__sociallikes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-top: 50px;
+  }
+  &__item {
+    align-items: baseline;
+    padding-right: 28px;
+  }
+
+  &__link:hover {
+
+    span{
+    color: $pink;
+    }
+
+    svg {
+      fill: $pink;
+    }
+  }
+
+  &__numberlink {
+    margin: 0;
+    font-weight: 700;
+    font-size: $font-size-s;
+    color: $text-color;
+    padding-left: 8px;
+  }
+
+  &__link:focus {
+
+    span{
+    color: $link-color;
+    }
+
+    svg {
+      fill: $link-color;
     }
   }
 }
-

@@ -15,7 +15,7 @@
 
 <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo">
+      <a href="./index.html" class="page-header__logo">
         <img src="img/logo.png" alt="books store">
       </a>
       <div class="page-header__work-time">с 9:00 до 19:00</div>
@@ -46,85 +46,106 @@
 <main>
 
 
-      <section class="booksinner">
-        <div class="booksinner__wrapper">
+       <section class="bookinner">
+      <div class="bookinner__wrap">
 
-          <div class="booksinner__preview">
-            <picture>
-              <img class="booksinner__preview-img" src="img/screen1.jpg">
-            </picture>
-            <picture>
-              <img class="booksinner__preview-img" src="img/screen1.jpg">
-            </picture>
-            <picture>
-              <img class="booksinner__preview-img" src="img/screen1.jpg">
-            </picture>
-          </div>
-
-          <div class="booksinner__imgwrapper">
-            <img class="booksinner__img" src="img/bsuper.jpg" alt="books-superpotrebiteli">
-          </div>
-
-            <div class="booksinner__title-wrapper">
-              <p class="booksinner__title-author">Эдди Юн</p>
-              <h1 class="booksinner__title-title">Супер&shy;потребители</h1>
-              <p class="booksinner__title-subtitle">Кто это и почему они так важны для вашего бизнеса</p>
-            </div>
-
-            <div class="booksinfo">
-              <div class="booksinfo__salecard">
-                <div class="booksinfo__cardinfo">
-                  <div class="booksinfo__cardinfo-label">
-                    <p><label for="name">Арктикул</label></p>
-                    <p><label for="name">В наличии</label></p>
-                    <p><label for="name">Издательство</label></p>
-                    <p><label for="name">Цена</label></p>
-                  </div>
-                  <div class="booksinfo__cardinfo-name">
-                    <p><span>1090763</span></p>
-                    <p><span>5 шт.</span></p>
-                    <p><span>Издал</span></p>
-                    <p><span class="books-card__price">800 ₽</span></p>
-                  </div>
-                </div>
-                <form class="booksinfo__basket">
-                  <button class="booksinfo__basket-button" type="submit">Добавить в корзину</button>
-                  <label><input class="booksinfo__basket-num" type="number"  value="1"> шт.</label>
-                </form>
-                <div class="booksinfo__like"><span>20 людям понравилась эта книга</span></div>
-              </div>
-            </div>
-
-          <div class="booksinfo__discr">
-            <h2 class="booksinfo__title">Короткое описание</h2>
-            <p class="booksinfo__text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
-            <p class="booksinfo__text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
-            <a href="#">Показать полностью</a>
-          </div>
-
+        <div class="bookinner__preview">
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen1.jpg" alt="screen1">
+          </picture>
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen1.jpg" alt="screen2">
+          </picture>
+          <picture>
+            <img class="bookinner__preview-img" src="img/screen1.jpg" alt="screen3">
+          </picture>
         </div>
+
+        <div class="bookinner__imgwrap">
+          <img class="bookinner__img" src="img/bsuper.jpg" alt="superpotrebiteli">
+        </div>
+
+          <div class="bookinner__title">
+            <p class="bookinner__title-name">Эдди Юн</p>
+            <h1 class="bookinner__title-headline">Супер&shy;потребители</h1>
+            <p class="bookinner__title-sign">Кто это и почему они так важны для вашего бизнеса</p>
+          </div>
+
+            <div class="bookinfo">
+  <div class="bookinfo__salecard">
+    <div class="bookinfo__cardinfo">
+      <div class="bookinfo__cardinfo-label">
+        <p><label for="name">Арктикул</label></p>
+        <p><label for="name">В наличии</label></p>
+        <p><label for="name">Издательство</label></p>
+        <p><label for="name">Цена</label></p>
+      </div>
+      <div class="bookinfo__cardinfo-name">
+        <p><span>1090763</span></p>
+        <p><span>5 шт.</span></p>
+        <p><span>Издал</span></p>
+        <p><span class="book-card__price">800 ₽</span></p>
+      </div>
+    </div>
+    <form class="bookinfo__basket">
+      <button class="bookinfo__basket-button" type="submit">Добавить в корзину</button>
+      <label><input class="bookinfo__basket-num" type="text" value="1" required> шт.</label>
+    </form>
+
+    <p class="bookinfo__likesign">
+      <svg width="16" height="12">
+        <use xlink:href="img/sprite.svg#like"></use>
+      </svg>&nbsp;&nbsp;20 людям понравилась эта книга</p>
+    </div>
+  </div>
+
+  <div class="bookinfo__discr">
+    <h2 class="bookinfo__title">Короткое описание</h2>
+    <p class="bookinfo__text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+    <p class="bookinfo__text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок дюбимой команды, а стены их гаражей украшены подписанной символикой.</p>
+    <a href="index.html" class="newitems__link">Показать полностью&nbsp;
+      <svg width="12" height="12">
+        <use xlink:href="img/sprite.svg#down-arrow"></use>
+      </svg>
+    </a>
+    <ul class="bookinfo__sociallikes">
+      <li class="bookinfo__item">
+        <a href="#" class="bookinfo__link">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon_facebook"></use>
+          </svg>
+          <span class="bookinfo__numberlink">15</span>
+        </a>
+      </li>
+      <li class="bookinfo__item">
+        <a href="#" class="bookinfo__link">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+          </svg>
+          <span class="bookinfo__numberlink">4</span>
+        </a>
+      </li>
+      <li class="bookinfo__item">
+        <a href="#" class="bookinfo__link">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon_thumbs_up"></use>
+          </svg>
+          <span class="bookinfo__numberlink">150</span>
+        </a>
+      </li>
+      <li class="bookinfo__item">
+        <a href="#" class="bookinfo__link">
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon_thumbs_down"></use>
+          </svg>
+          <span class="bookinfo__numberlink">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

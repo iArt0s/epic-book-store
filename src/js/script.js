@@ -13,7 +13,7 @@ menu.classList.add('hide');
 
 burger.addEventListener('click', (e) => {
   menu.classList.toggle('hide');
-  e.target.classList.toggle('is-active')
+  e.target.classList.toggle('is-active');
 })
 
 
