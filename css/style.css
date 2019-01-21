@@ -2161,29 +2161,6 @@ li {
     background-color: transparent;
     border: none; }
 
-input[type="checkbox"] {
-  display: none; }
-
-label:before {
-  display: inline-block;
-  content: " ";
-  color: #000;
-  margin-right: 15px;
-  position: relative;
-  text-align: center;
-  text-indent: 0px;
-  width: 18px;
-  height: 18px;
-  border: 5px solid #e8e8e8;
-  vertical-align: middle; }
-
-input:checked + label:before {
-  content: 'V';
-  color: #d7569c; }
-
-input:disabled + label:before {
-  color: red; }
-
 input:required {
   border-color: #f4d4e4;
   color: #1f1f1f; }
